@@ -60,7 +60,7 @@ export default function Login() {
             autoComplete="current-password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
-            className="w-full rounded-lg border border-[#1F2937]/20 p-3 text-[#1F2937]"
+            className="w-full rounded-lg border border-[#1F2937]/20 mt-2 p-3 text-[#1F2937]"
           />
         </label>
         <button

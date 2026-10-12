@@ -11,6 +11,7 @@ import {
   LogOut,
   Menu,
   X,
+  QrCode,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -25,6 +26,7 @@ const Sidebar = () => {
     { to: "/menu", label: "Menu management", icon: UtensilsCrossed },
     { to: "/orders", label: "Order history", icon: Receipt },
     { to: "/reports", label: "Sales & analytics", icon: BarChart3 },
+    { to: "/menu-qr", label: "Menu QR", icon: QrCode },
   ];
 
   return (

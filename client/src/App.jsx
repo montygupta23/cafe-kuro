@@ -18,6 +18,7 @@ import OrderHistory from "./pages/OrderHistory";
 import OrderPOS from "./pages/OrderPOS";
 import SalesReport from "./pages/SalesReport";
 import TableManager from "./pages/TableManager";
+import MenuQr from "./pages/MenuQr";
 
 function RequireAuth() {
   const { user } = useAuth();
@@ -83,6 +84,7 @@ export default function App() {
               <Route path="customers" element={<CustomerManager />} />
               <Route path="menu" element={<MenuManager />} />
               <Route path="reports" element={<SalesReport />} />
+              <Route path="menu-qr" element={<MenuQr />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Route>
