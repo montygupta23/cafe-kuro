@@ -44,9 +44,9 @@ function LoginRoute() {
 
 function Layout() {
   return (
-    <div className="flex min-h-screen bg-obsidian-950 font-sans">
+    <div className="app-layout flex min-h-screen bg-obsidian-950 font-sans">
       <Sidebar />
-      <main className="min-w-0 flex-1 overflow-y-auto p-8">
+      <main className="app-main min-w-0 flex-1 overflow-y-auto p-8">
         <Outlet />
       </main>
     </div>
@@ -59,10 +59,10 @@ function NotFound() {
       <h1 className="font-serif text-3xl font-bold text-black">
         Page not found
       </h1>
-      <p className="text-sm text-[#1F2937]">
+      <p className="text-sm text-[#1F2937] border-b border-[#F97316] pb-3">
         The page you requested does not exist.
       </p>
-      <Link className="inline-block text-sm font-semibold text-[#F97316]" to="/">
+      <Link className="inline-block  text-sm px-4 py-2 rounded-lg text-white font-semibold bg-[#F97316] hover:bg-white border border-[#F97316] hover:text-[#F97316]" to="/">
         Return to dashboard
       </Link>
     </section>
@@ -88,7 +88,7 @@ export default function App() {
               <Route path="*" element={<NotFound />} />
             </Route>
           </Route>
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
