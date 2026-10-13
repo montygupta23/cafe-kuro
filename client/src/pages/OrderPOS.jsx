@@ -188,6 +188,9 @@ export default function OrderPOS() {
                 <h3 className="mt-2 text-sm font-semibold text-[#1F2937]">
                   {item.title}
                 </h3>
+                <p className="mt-2 text-xs text-[#1F2937]">
+                  {item.description?.slice(0, 50) + "..." || ""}
+                </p>
                 <p className="mt-3 flex items-center justify-between border-t border-white/10 pt-3 font-bold text-[#F97316]">
                   <span>${Number(item.price).toFixed(2)}</span>
                   <Plus className="h-4 w-4" />
